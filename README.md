@@ -27,6 +27,12 @@ Authentication: POST http://localhost:5000/user/auth
 }
 ```
 
-customerservice
+## Backend Configuration
 
-Admin123
+.env under server folder 
+
+```javascript
+PORT = 5000
+CONNECTION_URL = <mongodb_url>
+```
+
