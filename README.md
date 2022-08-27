@@ -26,7 +26,3 @@ Authentication: POST http://localhost:5000/user/auth
     "password": "admin123"
 }
 ```
-
-customerservice
-
-Admin123
