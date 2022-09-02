@@ -18,10 +18,10 @@ export default function AdminChatbar() {
       {/* Chat */}
       <div className=''>
         {/* Chat area */}
-        <div className='bg-red-300'>CHAT</div>
+        <div className='h-[1000px]'>CHAT</div>
 
         {/* Input Box */}
-        <div className='flex fixed bottom-0 w-[50%]'>
+        <div className='flex w-[750px]'>
           <i>
             <MapPinIcon className='w-10 m-2 text-primary active:text-secondary' />
           </i>
