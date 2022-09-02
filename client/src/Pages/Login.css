@@ -1,0 +1,79 @@
+.background{
+    background-image: linear-gradient(180deg, #FF715B 0%, #FFFFFF 51.89%, #1EA896 100%);
+    position: relative;
+    width: 100%;
+    height: 1024px;
+
+}
+
+.login-panel {
+    position: absolute;
+    width: 680px;
+    height: 624px;
+    left: 45%;
+    top: 200px;
+    text-align: center;
+    margin: auto;
+
+    background: #FFFFFF;
+    box-shadow: 0px 10px 10px rgba(43, 43, 43, 0.5);
+    backdrop-filter: blur(25px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 20px;
+}
+
+.welcome{
+    width: 392px;
+    height: 37px;
+    border-left: 6px solid #4C5454;
+    color: #4C5454;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 37px;
+    margin: 75px;
+    margin-top: 100px;
+    margin-left: 70px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.prompt {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 23px;
+    display: flex;
+    margin-left: 140px;
+    margin-bottom: 30px;
+    align-items: center;
+    color: #000000;
+}
+
+.input {
+    margin-left: -20px;
+    margin-bottom: 45px;
+    width: 371px;
+    height: 37px;
+    border: 1px solid #4C5454;
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+
+}
+
+.submit-btn {
+    background: #1EA896;
+    border-radius: 10px;
+    width: 161px;
+    height: 60px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
