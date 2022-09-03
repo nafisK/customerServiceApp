@@ -5,12 +5,13 @@ import {
   PhotoIcon,
   PaperAirplaneIcon,
 } from '@heroicons/react/24/outline'
+import AdminChat from './AdminChat'
 
 export default function AdminChatbar() {
   return (
     <div className=' h-screen'>
       {/* Person */}
-      <div className=' p-10 flex'>
+      <div className=' p-10 flex '>
         <img src={avatar} className='w-[150px] rounded-full' alt='/' />
         <h1 className='w-full text-5xl ml-5 mt-11 font-bold'>SAMPLE NAME</h1>
       </div>
@@ -18,10 +19,12 @@ export default function AdminChatbar() {
       {/* Chat */}
       <div className=''>
         {/* Chat area */}
-        <div className='h-[1000px]'>CHAT</div>
+        <div className='h-[1000px] '>
+          <AdminChat />
+        </div>
 
         {/* Input Box */}
-        <div className='flex w-[750px]'>
+        <div className='flex w-[750px] '>
           <i>
             <MapPinIcon className='w-10 m-2 text-primary active:text-secondary' />
           </i>
