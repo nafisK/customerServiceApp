@@ -19,7 +19,7 @@ export default function AdminChatbar() {
       {/* Chat */}
       <div className=''>
         {/* Chat area */}
-        <div className='h-[1000px] '>
+        <div className='h-[530px] '>
           <AdminChat />
         </div>
 
