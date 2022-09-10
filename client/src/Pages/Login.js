@@ -8,47 +8,45 @@ const initialState = {
   password: ''
 }
 
-function Login() {
+export default function Login() {
   const [formData, setFormData] = useState(initialState);
   const navigate = useNavigate();
 
-
   const handleChange = (event) => {
-    setFormData({ ...formData, [event.target.name]: event.target.value})
+    setFormData({ ...formData, [event.target.name]: event.target.value })
   };
 
-  const handleSubmit =  async(event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     console.log(formData);
     try {
-      const {data} = await api.signIn(formData);
+      const { data } = await api.signIn(formData);
       // localStorage.setItem('profile', data);
       navigate('/admin');
-    } catch (error) {
+    }
+    catch (error) {
       console.log(error.message);
     }
-  }
+  };
 
-  return <div className="background">
-    <div className="login-panel">
-      <h1 className="welcome">
-        Welcome Back...
-      </h1>
-      <div className="divider"></div>
-      <form>
-        <label className="prompt"> Enter your Email: </label>
-        <input className="input" name="email"
-            type="text" onChange={handleChange} value={formData.email}
-
-        />
-        <label className="prompt"> Enter your password: </label>
-        <input className="input" name="password"
-               type="text"  onChange={handleChange} value={formData.password}
-        />
-      </form>
-      <button className="submit-btn" onClick={handleSubmit}>Sign In</button>
+  return (
+    <div className="background">
+      <div className="login-panel">
+        <h1 className="welcome">
+          Welcome Back...
+        </h1>
+        <form>
+          <label className="prompt"> Email </label>
+          <input className="input" name="email" placeholder='Enter your email here'
+            type="email" onChange={handleChange} value={formData.email}
+          />
+          <label className="prompt"> Password </label>
+          <input className="input" name="password" placeholder='Enter your password here'
+            type="password" onChange={handleChange} value={formData.password}
+          />
+        </form>
+        <button className="submit-btn" onClick={handleSubmit}>Sign In</button>
+      </div>
     </div>
-  </div>
+  )
 }
-
-export default Login
